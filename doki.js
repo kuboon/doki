@@ -26,7 +26,7 @@
     return date.getUTCMinutes() % 6;
   }
   var getDokiDay = function(date){
-    return ['D','M','T','W','T','F','S'][date.getUTCDay()]
+    return ['U','M','T','W','R','F','S'][date.getUTCDay()]
   }
 
   Date.prototype.toDoki = function() {
@@ -36,6 +36,11 @@
       ret = day + doki;
     if(min != 0){ ret += ':' + min}
     return ret;
+  }
+
+  function parseDoki(str){
+    var week = str[0],
+        doki_count = str.substr(1,3)
   }
 
   function update(){
