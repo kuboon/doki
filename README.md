@@ -1,4 +1,11 @@
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/kuboon/doki) 
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/kuboon/doki)
 
 # doki
 another internet time concept
+
+```js
+import { Doki } from "https://raw.githubusercontent.com/kuboon/doki/master/doki.js"
+
+const doki = new Doki(new Date())
+console.log(doki.fmt('short'))
+```
