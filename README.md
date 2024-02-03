@@ -4,7 +4,7 @@
 another internet time concept
 
 ```js
-import { Doki } from "https://raw.githubusercontent.com/kuboon/doki/master/doki.js"
+import { Doki } from "https://kuboon.github.io/doki/doki.js"
 
 const doki = new Doki(new Date())
 console.log(doki.fmt('short'))
